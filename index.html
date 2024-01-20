@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator - Validate Email Id for you</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/email.svg" alt="mailicon">
+                <span>Validator</span>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="html/contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home">
+            <span class="homecolor"><h3>HOME</h3></span>
+            <div class="container">
+                <span><h4>Enter the Email Id to Validate</h4></span>
+                &nbsp;
+                <form name="myForm" action="/submit" method="post">
+                    <!-- Text input for username -->
+                    <label for="username">E-mail:</label>
+                    <input placeholder="Enter email to validate" class="input" type="text" id="username" name="username" autocomplete="off" required="">
+                    <br>
+                    <!-- Submit button -->
+                    <button id="submitBtn"  class="btn" type="submit" > Submit </button>
+                    <!--input id="submitBtn"  class="btn" type="clear" value="Clear"-->
+                    <button id="clearBtn" class="btn" type="button" onclick="document.getElementById('username').value = ''" >Clear</button>
+                    <br>
+                </form>
+            </div>
+
+            <div class="rescontainer">
+                <span><h3>Your Result</h3></span>
+                <div  id="resultCon" class="rescon">
+                    Your results will show here
+                </div>
+            </div>
+        </section> 
+
+        <section class="bottom">
+            <span class="blue"><span id="element"></span></span>
+        </section>
+
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['Validating Emails For You'],
+        typeSpeed: 60,
+        });
+    </script>
+
+    <footer>
+        &#169 Copyright by &nbsp; <a href="./index.html" style="color: black;"> Validator.com </a> &nbsp; | All Rights Reserved 
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

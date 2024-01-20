@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rokkitt', serif;;
+}
+
+body{
+    background-color: #b4d8f7;
+    color: #cf3995;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #97bcf0e3;
+    padding: 18px 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 40px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: #918597; 
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+main{
+    min-height: 85.55vh;
+}
+
+.homecolor{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 5px 5px;
+    padding: 5px 450px 5px 450px;
+    font-weight:200;
+    text-decoration: underline;
+    color: #6d7cff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.logo > span{
+    color: white;
+}
+
+.logo img{
+    width: 14px;
+    height: 14px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.blue{
+    color: rgb(3 0 255);
+}
+
+.container{
+    max-height: 50vh;
+    /*border: 1px solid black;
+    border-radius: 20px;*/
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: inherit;
+    font-size: 2rem;
+    margin: 100px 400px 80px 400px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.container form{
+    font-size: 2.1rem;
+}
+
+.btn{
+    min-width: 150px;
+    background: #a124c3;
+    border: 1.55px solid black;
+    border-radius: 20px;
+    padding: 9px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn :disabled{
+    cursor: not-allowed;
+}
+
+.btn:hover{
+    font-size: 1.05rem;
+    text-decoration: underline;
+}
+
+.rescontainer{
+    max-height: 50vh;
+    /*border: 1px solid black;
+    border-radius: 20px;*/
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+    font-size: 1.4rem;
+    margin: 100px 400px 80px 400px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    vertical-align: baseline;
+}
+
+input{
+    min-width: 180px;
+    padding: 6px 4px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.contactcolor{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 5px 5px;
+    padding: 5px 450px 5px 450px;
+    font-weight:200;
+    text-decoration: underline;
+    color: #6d7cff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#results div::first-letter{
+    text-transform: uppercase;
+}
+
+footer{
+    background: #97bcf0e3;
+    color:black;
+    display: flex;
+    padding: 15px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > a{
+    color: white; 
+    text-decoration: none;
+}
+
+footer > a:hover{
+    color: #918597; 
+    text-decoration: none;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        color: inherit;
+    }
+
+    .homecolor{
+        padding: 2px 2px;
+        font-size: 1.3rem;
+    }
+
+    .contactcolor{
+        padding: 2px 2px;
+        font-size: 1.3rem;
+    }
+
+    main{
+        min-height: 66.8vh;
+    }
+
+    .container{
+        font-size: 16px;
+        margin: 60px 60px 60px 60px;
+    }
+
+    .container span{
+        font-size: 1.25rem;
+    }
+
+    .container form{
+        font-size: 1.25rem;
+    }
+
+    .rescontainer{
+        font-size: 16px;
+        margin: 60px 60px 60px 60px;
+    }
+
+    .container span{
+        font-size: 1.25rem;
+    }
+
+    .btn{
+        padding: 2px 4px;
+        font-size: 0.8rem;
+        min-width: 125px;
+    }
+
+    nav{
+        flex-direction: column;
+        font-size: 14.3px;
+    }
+
+    .logo{
+        padding: 6px;
+    }
+
+    .logo span{
+        font-size: 18px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
